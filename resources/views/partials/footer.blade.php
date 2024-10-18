@@ -14,14 +14,14 @@
             </div>
 
             <!-- Menú repetido -->
-            <div>
+            <div class="pl-4 ml-8">
                 <h3 class="text-white text-xl font-semibold mb-4">Navegación</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-white">INICIO</a></li>
-                    <li><a href="#" class="hover:text-white">PRODUCTOS</a></li>
-                    <li><a href="#" class="hover:text-white">NOSOTROS</a></li>
-                    <li><a href="#" class="hover:text-white">BLOG</a></li>
-                    <li><a href="#" class="hover:text-white">CONTACTO</a></li>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">- INICIO</a></li>
+                    <li><a href="#" class="hover:text-white">- PRODUCTOS</a></li>
+                    <li><a href="#" class="hover:text-white">- NOSOTROS</a></li>
+                    <li><a href="#" class="hover:text-white">- BLOG</a></li>
+                    <li><a href="#" class="hover:text-white">- CONTACTO</a></li>
                 </ul>
             </div>
 
@@ -29,9 +29,9 @@
             <div>
                 <h3 class="text-white text-xl font-semibold mb-4">Contáctanos</h3>
                 <ul class="space-y-2">
-                    <li><a href="tel:+525512345678" class="hover:text-white">Teléfono: +52 55 1234 5678</a></li>
-                    <li><a href="mailto:contacto@empresa.com" class="hover:text-white">Email: contacto@empresa.com</a></li>
-                    <li><p>Dirección: Calle Falsa 123, Ciudad Industrial, CP 12345</p></li>
+                    <li><a href="tel:+522226090404" class="hover:text-white"><span class="font-bold">Teléfono: </span>222 609 0404</a></li>
+                    <li><a href="mailto:contacto@empresa.com" class="hover:text-white"><span class="font-bold">Email: </span>contacto@empresa.com</a></li>
+                    <li><p><span class="font-bold">Dirección: </span>Adolfo López Mateos 21 Col. Miguel Hidalgo, Puebla, Pue. CP 72308</p></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 </div>
 
                 <!-- Derechos reservados -->
-                <p class="text-gray-500">&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+                <p class="text-gray-500">&copy; 2024 Protecciones Industriales Orange. Todos los derechos reservados.</p>
             </div>
         </div>
     </div>

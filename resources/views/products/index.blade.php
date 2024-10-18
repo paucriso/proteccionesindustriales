@@ -1,6 +1,7 @@
 @extends('layouts.default')
 @section('title', 'Nuestros productos')
 @section('content')
+@include('partials.seguridad')
 <div class="container mx-auto py-4">
 
 
@@ -12,17 +13,17 @@
                 <div
                     class="bg-gray-200 rounded-xl hover:scale-[1.03] transition-all relative overflow-hidden">
 
-                    <div class="p-6">
+                    <a href="{{route('products.show', $product->id)}}" class="p-1">
                         <div class="w-2/3 h-[220px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
                             <img src="{{isset($product->images[0]) ? Voyager::image(json_decode($product->images)[0]) : asset('storage/.system/no-image.png')}}" alt="Product 1"
                                 class="h-full w-full object-contain" />
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="text-center bg-gray-100 p-6">
+                    <div class="text-center bg-gray-100 p-6 h-full">
                         <a href="{{route('products.show', $product->id)}}" class="text-lg font-bold text-gray-800 cursor-pointer">{{$product->name}}</a>
                         <button type="button"
-                            class="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 bg-yellow-400 text-base text-gray-800 font-semibold rounded-xl">
+                            class="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 bg-yellow-400 hover:bg-yellow-300 text-base text-gray-800 font-semibold rounded-xl">
 
                             Cotizar producto</button>
                     </div>

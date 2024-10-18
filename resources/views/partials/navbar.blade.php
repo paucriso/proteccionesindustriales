@@ -58,7 +58,7 @@
             <!-- Teléfono y redes sociales -->
             <div class="flex items-center space-x-4">
                 <div class="hidden lg:block">
-                    <span class="text-white">Tel: (123) 456-7890</span>
+                    <span class="text-white">Tel: (222) 609-0404</span>
                 </div>
                 <div class="flex space-x-2">
                     <a href="#" class="hover:text-gray-400">
