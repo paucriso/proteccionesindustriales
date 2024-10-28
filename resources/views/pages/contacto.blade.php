@@ -61,9 +61,7 @@
         <div class="mt-12">
             <h3 class="text-2xl font-bold text-gray-800 mb-6">Ubicación</h3>
             <!-- Mapa embebido -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094376!2d144.955923315678!3d-37.817209979751814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sMelbourne%20Central!5e0!3m2!1sen!2sau!4v1613981504941!5m2!1sen!2sau"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="w-full h-96" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d12707.202983735775!2d-98.1447812!3d19.0674087!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1ses-419!2smx!4v1729541775013!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>

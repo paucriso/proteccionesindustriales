@@ -10,6 +10,7 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "livewire/livewire": "^2.12",
         "tcg/voyager": "^1.7"
     },
     "require-dev": {
@@ -24,6 +25,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "App\\Helpers\\": "app/Helpers",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

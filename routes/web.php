@@ -14,11 +14,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
+
+
 Route::get('/', [PageController::class, 'index'])->name('pages.index');
 Route::get('nosotros', [PageController::class, 'nosotros'])->name('pages.nosotros');
 Route::get('contacto', [PageController::class, 'contacto'])->name('pages.contacto');
 Route::get('blog', [PageController::class, 'blog'])->name('pages.blog');
 Route::get('blog/{id}', [PageController::class, 'article'])->name('pages.article');
+Route::get('cotizacion', [PageController::class, 'cotizacion'])->name('pages.cotizacion');
 
 Route::get('products', [ProductController::class, 'index'])->name('products.index');
 Route::get('products/{id}', [ProductController::class, 'show'])->name('products.show');

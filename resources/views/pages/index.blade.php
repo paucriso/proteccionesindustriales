@@ -141,11 +141,11 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="bg-yellow-500 text-white py-12">
+    <section class="bg-blue-500 text-white py-12">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-semibold">¡Estamos listos para ayudarte a proteger lo que más valoras!</h2>
             <p class="text-lg mt-4">Contáctanos para recibir una solución completamente personalizada para tu industria.</p>
-            <a href="#" class="bg-white text-yellow-500 px-6 py-3 rounded-full mt-6 inline-block font-semibold">Contáctanos</a>
+            <a href="#" class="bg-white text-blue-500 px-6 py-3 rounded-full mt-6 inline-block font-semibold">Contáctanos</a>
         </div>
     </section>
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use App\News;
 
 class PageController extends Controller
 {
@@ -20,12 +21,17 @@ class PageController extends Controller
         return view('pages.contacto');
     }
 
-    public function blog() {
-        return view('pages.blog');
+    public function article($id) {
+        $article = News::find($id);
+        return view('pages.article', compact('article'));
     }
 
-    public function article() {
+    public function cotizacion() {
+        return view('pages.cotizacion');
+    }
 
-        return view('pages.article');
+    public function blog() {
+        $articles = News::paginate(15);
+        return view('pages.blog', compact('articles'));
     }
 }
