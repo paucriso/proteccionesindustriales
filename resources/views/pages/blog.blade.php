@@ -1,6 +1,7 @@
 @extends('layouts.default')
 @section('title', 'Blog')
 @section('content')
+@include('partials.seguridad')
 <!-- Blog Section -->
 <section class="py-12 bg-gray-100">
     <div class="container mx-auto px-6">

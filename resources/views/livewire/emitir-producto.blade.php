@@ -22,18 +22,18 @@
     <div x-data="{ added: false }">
         <button x-bind:disabled="added"
                 type="button"
-                class="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 text-base font-semibold"
+                class="w-full flex items-center justify-center gap-3 mt-6 mb-1 px-6 py-3 text-base font-semibold rounded"
                 x-text="added ? 'Producto agregado' : 'Agregar a cotización'"
                 @click="added = true; setTimeout(() => { added = false }, 5000)"
                 wire:click="$emitTo('cotizador', 'agregarProducto', {{$productId}}, {{$quantity}})"
 
-                :class="added ? 'bg-gray-300 cursor-not-allowed' : 'bg-yellow-400 hover:bg-yellow-300 text-gray-800'">
+                :class="added ? 'bg-gray-300 cursor-not-allowed' : 'bg-yellow-300 hover:bg-yellow-400 text-gray-800'">
 
         </button>
     </div>
-    <button type="button"
+    <a href="https://wa.link/uy9fk9" target="_blank" type="button"
         class="min-w-[200px] px-4 py-2.5 border border-[#128C7E] bg-[#128C7E] hover:bg-[#075E54] text-white text-sm font-semibold rounded mb-1">Cotizar
-        por Whatsapp</button>
-    <button type="button"
+        por Whatsapp</a>
+    <a href="{{route('pages.cotizacion')}}" type="button"
         class="min-w-[200px] px-4 py-2.5 border border-gray-800 bg-gray-200 hover:bg-gray-300 text-gray-700 text-sm font-semibold rounded">Cotizar
-        por Correo</button>
+        por Correo</a>

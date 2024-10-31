@@ -9,8 +9,9 @@ use App\News;
 class PageController extends Controller
 {
     public function index() {
+        $destacados = Product::where('featured', 1)->get();
 
-        return view('pages.index');
+        return view('pages.index', compact('destacados'));
     }
 
     public function nosotros() {

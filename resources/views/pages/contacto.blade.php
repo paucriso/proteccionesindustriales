@@ -1,6 +1,7 @@
 @extends('layouts.default')
 @section('title', 'contáctanos')
 @section('content')
+@include('partials.seguridad')
 <!-- Sección Contacto -->
 <section id="contacto" class="py-16 bg-white container mx-auto px-6">
     <div class="container mx-auto">
@@ -36,11 +37,11 @@
                 <p class="text-lg text-gray-600">Puedes comunicarte con nosotros a través de los siguientes medios:</p>
                 <div>
                     <h4 class="text-lg font-semibold text-gray-700">Dirección</h4>
-                    <p class="text-gray-600">Calle Falsa 123, Ciudad Industrial, CP 12345, Estado, País</p>
+                    <p class="text-gray-600">C. Adolfo López Mateos #21, Col. Miguel Hidalgo, Puebla, Pue.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-gray-700">Teléfono</h4>
-                    <p class="text-gray-600">+52 55 1234 5678</p>
+                    <p class="text-gray-600">222 609 0404</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-gray-700">Correo electrónico</h4>

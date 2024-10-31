@@ -2,6 +2,7 @@
 
 @section('title', 'nosotros')
 @section('content')
+@include('partials.seguridad')
 <!-- Sección Nosotros -->
 <section id="nosotros" class="py-16 px-6 container mx-auto">
     <div class="container mx-auto flex flex-col md:flex-row items-center">

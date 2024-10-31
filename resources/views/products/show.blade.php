@@ -120,7 +120,7 @@
                         </div>
                     @endif
 
-                        @livewire('emitir-producto', ['productId' => $product->id])xxx
+                        @livewire('emitir-producto', ['productId' => $product->id])
                         {{-- <button type="button"
                             class="min-w-[200px] px-4 py-3 bg-yellow-400 hover:bg-yellow-300 text-gray-800 text-sm font-semibold rounded mt-2 mb-1">Añadir
                             a la cotización</button> --}}

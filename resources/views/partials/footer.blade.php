@@ -2,6 +2,7 @@
     <p>&copy; {{ date('Y') }} Soluciones Metálicas. Todos los derechos reservados.</p>
 </footer> --}}
 <!-- Footer -->
+@include('partials.seguridad')
 <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="container mx-auto px-4">
         <!-- Contenedor del footer -->
@@ -9,13 +10,13 @@
 
             <!-- Breve descripción de la empresa -->
             <div>
-                <h3 class="text-white text-xl font-semibold mb-4">Nuestra Empresa</h3>
-                <p>Nos especializamos en la fabricación de protecciones industriales de acero, canastillas para montacargas, escaleras y más. Nos comprometemos a ofrecer productos personalizados que se ajusten a las necesidades de cada cliente.</p>
+                <h3 class="text-white text-base font-semibold mb-4">Nuestra Empresa</h3>
+                <p class="text-sm">Nos especializamos en la fabricación de protecciones industriales de acero, canastillas para montacargas, escaleras y más. Nos comprometemos a ofrecer productos personalizados que se ajusten a las necesidades de cada cliente.</p>
             </div>
 
             <!-- Menú repetido -->
             <div class="pl-4 ml-8">
-                <h3 class="text-white text-xl font-semibold mb-4">Navegación</h3>
+                <h3 class="text-white text-base font-semibold mb-4">Navegación</h3>
                 <ul class="space-y-2 text-sm">
                     <li><a href="#" class="hover:text-white">- INICIO</a></li>
                     <li><a href="#" class="hover:text-white">- PRODUCTOS</a></li>
@@ -27,8 +28,8 @@
 
             <!-- Información de contacto -->
             <div>
-                <h3 class="text-white text-xl font-semibold mb-4">Contáctanos</h3>
-                <ul class="space-y-2">
+                <h3 class="text-white text-base font-semibold mb-4">Contáctanos</h3>
+                <ul class="space-y-2 text-sm">
                     <li><a href="tel:+522226090404" class="hover:text-white"><span class="font-bold">Teléfono: </span>222 609 0404</a></li>
                     <li><a href="mailto:contacto@empresa.com" class="hover:text-white"><span class="font-bold">Email: </span>contacto@empresa.com</a></li>
                     <li><p><span class="font-bold">Dirección: </span>Adolfo López Mateos 21 Col. Miguel Hidalgo, Puebla, Pue. CP 72308</p></li>
@@ -37,7 +38,7 @@
         </div>
 
         <!-- Separador -->
-        <div class="border-t border-gray-700 mt-8 pt-4">
+        <div class="border-t border-gray-700 mt-8 pt-4 text-xs">
             <div class="flex justify-between items-center">
                 <!-- Redes sociales -->
                 <div class="flex space-x-4">

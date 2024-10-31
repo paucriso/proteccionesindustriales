@@ -2,27 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+  }
 
 .descripcion-producto strong {
     @apply text-lg leading-7;
 }
 
-/* Para eliminar la apariencia personalizada en navegadores webkit como Chrome y Safari */
-input[type="number"] {
-    appearance: none;
-    -moz-appearance: textfield; /* Firefox */
-}
 
-/* Para forzar que las flechas del input number sean visibles */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    appearance: auto;
-    opacity: 1; /* Asegura que las flechas sean visibles */
-}
-
-input[type="number"]::-moz-spin-button {
-    appearance: auto; /* Para navegadores basados en Firefox */
-}
 
 .article-content p {
     margin-bottom: 1.5rem;
