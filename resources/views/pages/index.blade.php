@@ -6,9 +6,9 @@
 
     <!-- Hero Section -->
     @include('partials.seguridad')
-    <section id="hero" class="bg-cover bg-center h-60 flex items-center justify-between px-8 md:px-16 bg-gray-900 bg-gradient-to-r from-gray-900 to-gray-800">
+    <section id="hero" class="bg-cover bg-center h-40 flex items-center justify-between px-8 md:px-16 bg-gray-900 bg-gradient-to-r from-gray-900 to-gray-800">
         <div class="text-left text-white max-w-lg">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4">Descubre nuestras soluciones personalizadas</h1>
+            <h1 class="text-3xl md:text-2xl font-bold mb-4">Descubre nuestras soluciones personalizadas</h1>
             <p class="text-lg mb-4">Fabricación a medida para tus proyectos industriales.</p>
         </div>
         <div>
@@ -54,7 +54,7 @@
             <!-- Servicio 3 -->
             <div class="bg-white p-6 shadow-lg">
                 <img src="{{asset('storage/.system/canastilla-montacargas.webp')}}" alt="Carros transportadores" class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold mb-2 text-gray-800">Carros Transportadores</h3>
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">Canastilla para Montacargas</h3>
                 <p class="text-gray-700">Dollys, canastillas para montacargas y más.</p>
             </div>
             <!-- Servicio 4 -->

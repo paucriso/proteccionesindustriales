@@ -1,7 +1,7 @@
 {{-- resources/views/livewire/quotation.blade.php --}}
 <div class="container mx-auto px-6 py-8 min-h-96">
     <h2 class="text-2xl text-gray-800 font-bold">Solicita Tu Cotización</h2>
-    <div class="grid grid-cols-2 col-span-3 my-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 col-span-3 my-3">
         <div>
             @if (empty($items))
                 <div class="bg-white p-6">
