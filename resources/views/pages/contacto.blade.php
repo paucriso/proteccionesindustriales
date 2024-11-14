@@ -1,5 +1,4 @@
 @extends('layouts.default')
-@section('title', 'contáctanos')
 @section('content')
 @include('partials.seguridad')
 <!-- Sección Contacto -->

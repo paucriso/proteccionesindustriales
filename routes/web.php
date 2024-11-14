@@ -27,8 +27,9 @@ Route::get('blog', [PageController::class, 'blog'])->name('pages.blog');
 Route::get('blog/{id}', [PageController::class, 'article'])->name('pages.article');
 Route::get('cotizacion', [PageController::class, 'cotizacion'])->name('pages.cotizacion');
 
-Route::get('products', [ProductController::class, 'index'])->name('products.index');
-Route::get('products/{id}', [ProductController::class, 'show'])->name('products.show');
+Route::post('busqueda', [ProductController::class, 'busqueda'])->name('products.busqueda');
+Route::get('productos', [ProductController::class, 'index'])->name('products.index');
+Route::get('productos/{id}', [ProductController::class, 'show'])->name('products.show');
 
 
 Route::group(['prefix' => 'admin'], function () {

@@ -15,14 +15,14 @@
             </div>
 
             <!-- Menú repetido -->
-            <div class="pl-4 ml-8">
+            <div class="pl-4 ml-8 hidden md:block">
                 <h3 class="text-white text-base font-semibold mb-4">Navegación</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-white">- INICIO</a></li>
-                    <li><a href="#" class="hover:text-white">- PRODUCTOS</a></li>
-                    <li><a href="#" class="hover:text-white">- NOSOTROS</a></li>
-                    <li><a href="#" class="hover:text-white">- BLOG</a></li>
-                    <li><a href="#" class="hover:text-white">- CONTACTO</a></li>
+                    <li><a href="{{ route('pages.index') }}" class="hover:text-white">- INICIO</a></li>
+                    <li><a href="{{ route('products.index') }}" class="hover:text-white">- PRODUCTOS</a></li>
+                    <li><a href="{{ route('pages.nosotros') }}" class="hover:text-white">- NOSOTROS</a></li>
+                    <li><a href="{{ route('pages.blog') }}" class="hover:text-white">- BLOG</a></li>
+                    <li><a href="{{ route('pages.contacto') }}" class="hover:text-white">- CONTACTO</a></li>
                 </ul>
             </div>
 
@@ -41,15 +41,19 @@
         <div class="border-t border-gray-700 mt-8 pt-4 text-xs">
             <div class="flex justify-between items-center">
                 <!-- Redes sociales -->
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
-                    <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
-                    <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <div class="md:flex space-x-4 hidden">
+                    <a href="https://www.facebook.com/share/1BSrNXwYfb/?mibextid=kFxxJD" target="_blank" class="text-gray-400 hover:text-white">Facebook</a>
+                    <a href="https://www.instagram.com/protecciones_industriales/profilecard/" target="_blank" class="text-gray-400 hover:text-white">Instagram</a>
                 </div>
 
                 <!-- Derechos reservados -->
-                <p class="text-gray-500">&copy; 2024 Protecciones Industriales Orange. Todos los derechos reservados.</p>
+                <p class="text-gray-500">&copy; 2024 Protecciones Industriales Orange. Todos los derechos reservados. | <span class="font-bold">Diseño por: </span><a href="https://www.digitweb.com.mx" target="_blank">Digitweb Diseño Web</a></p>
             </div>
         </div>
+    </div>
+    <div class="fixed bottom-2 right-2 md:bottom-5 md:right-5">
+        <a href="https://wa.link/uy9fk9" target="_blank">
+            <img class="max-w-16" src="{{asset('storage/.system/icono-whats.png')}}" alt="">
+        </a>
     </div>
 </footer>

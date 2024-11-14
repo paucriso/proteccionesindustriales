@@ -1,6 +1,5 @@
 @extends('layouts.default')
 
-@section('title', 'nosotros')
 @section('content')
 @include('partials.seguridad')
 <!-- Sección Nosotros -->

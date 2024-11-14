@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'Articulo del blog')
+@section('title', $article->title)
 @section('content')
 @include('partials.seguridad')
 <!-- Blog Article Section -->

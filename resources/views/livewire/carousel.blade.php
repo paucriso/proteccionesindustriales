@@ -7,7 +7,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             @forelse ($destacados as $destacado)
                 <div wire:key="product-{{ $destacado->id }}" class="bg-gray-200 rounded-xl hover:scale-[1.03] transition-all relative overflow-hidden">
-                    <a href="{{ route('products.show', $destacado->id) }}" class="p-1">
+                    <a href="{{ route('products.show', $destacado) }}" class="p-1">
                         <div class="w-2/3 h-[220px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
                             <img
                                 src="{{ isset($destacado->images[0]) ? Voyager::image(json_decode($destacado->images)[0]) : asset('storage/.system/no-image.png') }}"
@@ -19,12 +19,17 @@
 
                     <div class="text-center bg-gray-100 p-6 h-full">
                         <a
-                            href="{{ route('products.show', $destacado->id) }}"
+                            href="{{ route('products.show', $destacado) }}"
                             class="text-lg font-bold text-gray-800 cursor-pointer hover:text-blue-600 transition-colors"
                         >
                             {{ $destacado->name }}
                         </a>
-
+                        <a href="{{route('products.show', $destacado)}}" type="button"
+                        class="w-full font-sans flex items-center justify-center gap-3 mt-6 px-6 py-3
+                               text-[15px] font-semibold bg-gray-300 hover:bg-gray-400"
+                        >
+                        Ver producto
+                </a>
                         @livewire('emitir-productos', ['productId' => $destacado->id], key('emit-'.$destacado->id))
                     </div>
                 </div>

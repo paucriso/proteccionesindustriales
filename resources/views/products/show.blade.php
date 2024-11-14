@@ -1,4 +1,5 @@
 @extends('layouts.default')
+@section('title', $product->name . ' - Protecciones Industriales')
 @section('content')
 
     @push('styles')
@@ -65,7 +66,7 @@
     @endpush
     <section class="container mx-auto py-14 px-4">
 
-        <div class="grid grid-cols-3  gap-4 shadow-xl py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3  gap-4 shadow-xl py-8">
             <div>
                 <div>
                     <!-- Swiper -->
@@ -133,7 +134,7 @@
 
             </div>
             <!-- Hidden on desktop -->
-            <div class="lg:hidden">
+            <div class="hidden">
                 <h4 class="text-xl font-bold text-[#252525]">Características</h4>
                 <div class="px-8 mt-4">
                     @if (1 == 1)
@@ -164,7 +165,7 @@
                 </div>
             </div>
             <!-- Hidden on mobile -->
-            <div class="hidden lg:block col-span-2">
+            <div class="col-span-2">
                 <div>
                     <h2 class="text-2xl font-extrabold text-gray-700">{{ $product->name }}</h2>
                     <hr class="my-6" />
