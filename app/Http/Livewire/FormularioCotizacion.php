@@ -14,6 +14,7 @@ class FormularioCotizacion extends Component
     public $phone;
     public $message;
     public $formSubmitted = false;
+    public $items;
 
     public function submitForm()
     {
@@ -23,14 +24,13 @@ class FormularioCotizacion extends Component
             'phone' => 'required',
             'message' => 'required',
         ]);
-
         Mail::to('paulot73@hotmail.com')
-            ->send(new Cotizacion($validatedData));
+            ->send(new Cotizacion($validatedData, $this->items));
         // Limpiar los campos después de procesar el formulario
         $this->reset(['name', 'email', 'phone', 'message']);
         $this->formSubmitted = true;
         // Emitir un mensaje de éxito
-        session()->flash('message', '¡Formulario enviado con éxito y correo electrónico enviado!');
+        session()->flash('message', '¡Formulario enviado con éxito');
 
         /* Formulario::create($validatedData);
         return redirect()->to('/'); */

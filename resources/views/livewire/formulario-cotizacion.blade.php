@@ -1,4 +1,4 @@
-<div>
+<div x-data="{solicitado: false}">
     @if ($formSubmitted)
         <p class="text-green-400 text-2xl text-center">{{__('home.formsuccess')}}</p>
     @else
@@ -32,7 +32,13 @@
                 <p class="text-sm text-red-600">{{$message}}</p>
             @enderror
         </div>
-        <button type="submit" class="bg-cyan-600 text-gray-200 py-3 px-5 text-sm font-medium text-center rounded-lg sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 w-full lg:w-auto">Solicitar cotización</button>
+        <button x-bind.disabled="solicitado" @click="solicitado = true; setTimeout(() => { solicitado = false }, 3000)" type="submit"
+            class=" text-gray-200 py-3 px-5 text-sm font-medium text-center rounded-lg
+            sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300
+            bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 w-full lg:w-auto"
+            :class="solicitado ? 'bg-gray-300 cursor-not-allowed' : 'bg-cyan-600'">
+                Solicitar cotización
+        </button>
     </form>
     @endif
 </div>
