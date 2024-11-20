@@ -25,7 +25,7 @@ class FormularioCotizacion extends Component
             'phone' => 'required',
             'message' => 'required',
         ]);
-        Mail::to('paulot73@hotmail.com')
+        Mail::to('formulario@proteccionesdeacero.com.mx')
             ->send(new Cotizacion($validatedData, $this->items));
         // Limpiar los campos después de procesar el formulario
         $this->reset(['name', 'email', 'phone', 'message']);
