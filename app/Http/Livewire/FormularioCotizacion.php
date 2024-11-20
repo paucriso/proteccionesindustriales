@@ -15,6 +15,7 @@ class FormularioCotizacion extends Component
     public $message;
     public $formSubmitted = false;
     public $items;
+    public $titulo;
 
     public function submitForm()
     {

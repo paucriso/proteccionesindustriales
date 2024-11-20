@@ -12,7 +12,9 @@
     <p><strong>Correo Electrónico: </strong>{{ $data['email'] }}</p>
     <p><strong>Teléfono: </strong>{{ $data['phone'] }}</p>
     <p><strong>Mensaje: </strong>{{ $data['message'] }}</p>
+
     <hr>
+    @if($items)
     <h4>Productos requeridos:</h4>
 
     <table>
@@ -33,5 +35,6 @@
             @endforelse
         </tbody>
     </table>
+    @endif
 </body>
 </html>

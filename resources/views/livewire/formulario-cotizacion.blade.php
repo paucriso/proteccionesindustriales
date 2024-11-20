@@ -37,7 +37,7 @@
             sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300
             bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 w-full lg:w-auto"
             :class="solicitado ? 'bg-gray-300 cursor-not-allowed' : 'bg-cyan-600'">
-                Solicitar cotización
+                {{$titulo}}
         </button>
     </form>
     @endif
