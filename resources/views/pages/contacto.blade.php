@@ -26,7 +26,7 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-gray-700">Correo electrónico</h4>
-                    <p class="text-gray-600">contacto@empresa.com</p>
+                    <p class="text-gray-600">ventas@proteccionesdeacero.com.mx</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-gray-700">Síguenos</h4>

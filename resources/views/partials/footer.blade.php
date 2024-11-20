@@ -31,7 +31,7 @@
                 <h3 class="text-white text-base font-semibold mb-4">Contáctanos</h3>
                 <ul class="space-y-2 text-sm">
                     <li><a href="tel:+522226090404" class="hover:text-white"><span class="font-bold">Teléfono: </span>222 609 0404</a></li>
-                    <li><a href="mailto:contacto@empresa.com" class="hover:text-white"><span class="font-bold">Email: </span>contacto@empresa.com</a></li>
+                    <li><a href="mailto:contacto@empresa.com" class="hover:text-white"><span class="font-bold">Email: </span>ventas@proteccionesdeacero.com.mx</a></li>
                     <li><p><span class="font-bold">Dirección: </span>Adolfo López Mateos 21 Col. Miguel Hidalgo, Puebla, Pue. CP 72308</p></li>
                 </ul>
             </div>
