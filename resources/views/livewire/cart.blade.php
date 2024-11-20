@@ -93,7 +93,7 @@
             @endif
         </div>
         <div class="px-6">
-            @livewire('formulario-cotizacion', ['items' => $items])
+            @livewire('formulario-cotizacion', ['items' => $items, 'titulo' => 'Solicitar cotización'])
         </div>
     </div>
 
