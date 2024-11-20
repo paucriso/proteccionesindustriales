@@ -89,7 +89,7 @@
                                     @endforeach
                                 @else
                                     <div class="swiper-slide bg-contain bg-no-repeat"
-                                        style="background-image:url({{ Voyager::image(json_decode($producto->imagenes)[0]) }})">
+                                        style="background-image:url({{ Voyager::image(json_decode($product->images)[0]) }})">
                                         <div class="w-full h-full flex justify-center items-center">
                                             <a href="{{ Voyager::image(json_decode($product->images)[0]) }}"
                                                 data-lightbox="producto" class="text-3xl text-white hover:text-celeste-500">
