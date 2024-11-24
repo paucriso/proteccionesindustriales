@@ -22,7 +22,7 @@
     <meta property="twitter:description" content="Soluciones en protecciones industriales y seguridad, como protecciones para racks, barreras peatonales, protecciones perimetrales y metálicas, además de bancos y mesas de trabajo, canastillas para montacargas, y estantería industrial de alta resistencia." />
     <meta property="twitter:image" content="{{asset('storage/.system/logo-grande.jpg')}}" />
 
-    <link rel="shortcut icon" href="{{asset('storage/.system/favicon.webp')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('storage/.system/favicon.ico')}}" type="image/x-icon">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
